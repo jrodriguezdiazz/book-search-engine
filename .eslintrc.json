@@ -1,0 +1,35 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["react-app", "airbnb", "prettier"],
+  "parser": "react-scripts/node_modules/babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "react/no-unused-state": "warn",
+    "react/react-in-jsx-scope": "off",
+    "react/prefer-stateless-function": "off",
+    "react/state-in-constructor": "off",
+    "react/prop-types": "off",
+    "import/prefer-default-export": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-props-no-spreading": "off",
+    "import/extensions": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
+}
