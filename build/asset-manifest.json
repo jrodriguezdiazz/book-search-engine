@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/jrodriguezdiazz/book-search-engine/static/css/main.5ceabc41.chunk.css",
+    "main.js": "/jrodriguezdiazz/book-search-engine/static/js/main.1e003e23.chunk.js",
+    "main.js.map": "/jrodriguezdiazz/book-search-engine/static/js/main.1e003e23.chunk.js.map",
+    "runtime-main.js": "/jrodriguezdiazz/book-search-engine/static/js/runtime-main.11372101.js",
+    "runtime-main.js.map": "/jrodriguezdiazz/book-search-engine/static/js/runtime-main.11372101.js.map",
+    "static/js/2.4d6af23d.chunk.js": "/jrodriguezdiazz/book-search-engine/static/js/2.4d6af23d.chunk.js",
+    "static/js/2.4d6af23d.chunk.js.map": "/jrodriguezdiazz/book-search-engine/static/js/2.4d6af23d.chunk.js.map",
+    "static/js/3.16d9217b.chunk.js": "/jrodriguezdiazz/book-search-engine/static/js/3.16d9217b.chunk.js",
+    "static/js/3.16d9217b.chunk.js.map": "/jrodriguezdiazz/book-search-engine/static/js/3.16d9217b.chunk.js.map",
+    "index.html": "/jrodriguezdiazz/book-search-engine/index.html",
+    "static/css/main.5ceabc41.chunk.css.map": "/jrodriguezdiazz/book-search-engine/static/css/main.5ceabc41.chunk.css.map",
+    "static/js/2.4d6af23d.chunk.js.LICENSE.txt": "/jrodriguezdiazz/book-search-engine/static/js/2.4d6af23d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.11372101.js",
+    "static/js/2.4d6af23d.chunk.js",
+    "static/css/main.5ceabc41.chunk.css",
+    "static/js/main.1e003e23.chunk.js"
+  ]
+}
