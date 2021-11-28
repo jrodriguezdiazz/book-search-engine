@@ -1,6 +1,6 @@
 {
   "name": "book-search-engine",
-  "homepage": "https://github.com/jrodriguezdiazz/book-search-engine",
+  "homepage": "./",
   "description": "🔍 📚 An application that will allow users to search for books by entering a query (Title, Author, etc). Display the resulting books in a list on the page with all the corresponding data.",
   "email": "jrodriguezdiazz@outlook.com",
   "license": "MIT",
