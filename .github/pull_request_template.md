@@ -25,6 +25,10 @@
 
 ## Screenshots (if appropriate):
 
+| Desktop | Mobile |
+| ------- | ------ |
+|         |        |
+
 ---
 
 ## Types of Changes
