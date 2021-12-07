@@ -39,6 +39,7 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
   }),
 }));
 
+// TODO: Replace the any data type with an interface of the Google Books API.
 export const BookCard: FunctionComponent<any> = ({ bookInfo }) => {
   const classes = useStyles();
   const [expanded, setExpanded] = useState(false);
