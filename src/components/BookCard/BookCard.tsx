@@ -14,6 +14,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Button from '@mui/material/Button';
 import parser from 'html-react-parser';
 import { Link } from '@mui/material';
+import { Book } from '../../Interfaces/Book';
 
 interface ExpandMoreProps extends IconButtonProps {
   expand: boolean;
@@ -39,8 +40,11 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
   }),
 }));
 
-// TODO: Replace the any data type with an interface of the Google Books API.
-export const BookCard: FunctionComponent<any> = ({ bookInfo }) => {
+interface Props {
+  bookInfo: Book;
+}
+
+export const BookCard: FunctionComponent<Props> = ({ bookInfo }) => {
   const classes = useStyles();
   const [expanded, setExpanded] = useState(false);
 
@@ -58,8 +62,9 @@ export const BookCard: FunctionComponent<any> = ({ bookInfo }) => {
     imageLinks?.thumbnail ||
     'https://www.publicdomainpictures.net/pictures/280000/velka/not-found-image-15383864787lu.jpg';
 
-  const snippet =
-    parser(searchInfo?.textSnippet) || 'No short description found';
+  const snippet = parser(
+    searchInfo?.textSnippet || '<b>No short description found</b>'
+  );
 
   return (
     <Card sx={{ maxWidth: 345 }}>
