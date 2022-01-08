@@ -28,7 +28,8 @@
     "jsx-a11y/click-events-have-key-events": "off",
     "jsx-a11y/no-noninteractive-element-interactions": "off",
     "react/jsx-fragments": "off",
-    "no-console": "off"
+    "no-console": "off",
+    "react/no-unescaped-entities": "off"
   },
   "settings": {
     "import/resolver": {
