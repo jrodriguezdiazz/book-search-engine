@@ -1,12 +1,17 @@
-import { useRef } from 'react';
+import React, { FunctionComponent, useRef } from 'react';
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
 import Autocomplete from '@mui/material/Autocomplete';
 import IconButton from '@mui/material/IconButton';
 import { SearchOutlined } from '@mui/icons-material';
 import { mockDataOfBooks } from './mockDataOfBooks';
+import { Book } from '../../Interfaces/Book';
 
-export const SearchInput = () => {
+interface Props {
+  setBooks: React.Dispatch<React.SetStateAction<Book[]>>;
+}
+
+export const SearchInput: FunctionComponent<Props> = ({ setBooks }) => {
   const valueRef = useRef<HTMLInputElement | null>(null);
 
   const searchBook = async () => {
@@ -14,7 +19,7 @@ export const SearchInput = () => {
       `https://www.googleapis.com/books/v1/volumes?q=${valueRef.current?.value}&printType=books&filter=full&orderBy=relevance&maxResults=10`
     );
     const json = await result.json();
-    console.log(json);
+    setBooks(json.items);
   };
 
   return (
